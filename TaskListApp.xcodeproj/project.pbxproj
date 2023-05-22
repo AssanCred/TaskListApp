@@ -62,7 +62,6 @@
 				88D164582A19CFA400D17216 /* ViewControllers */,
 				88D164592A19CFAD00D17216 /* Storyboards */,
 				88D164572A19CFA000D17216 /* App */,
-				88D0F6D62A164751003C7F70 /* TaskListApp.xcdatamodeld */,
 				88D0F6D92A164752003C7F70 /* Assets.xcassets */,
 			);
 			path = TaskListApp;
@@ -98,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				88D1645B2A19E28500D17216 /* StorageDataManager.swift */,
+				88D0F6D62A164751003C7F70 /* TaskListApp.xcdatamodeld */,
 			);
 			path = Servises;
 			sourceTree = "<group>";

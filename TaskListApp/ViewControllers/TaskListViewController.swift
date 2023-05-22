@@ -76,7 +76,6 @@ final class TaskListViewController: UITableViewController {
     private func fetchData() {
         storageDataManager.fetchData { [weak self] result in
             switch result {
-                
             case .success(let task):
                 self?.taskList = task
             case .failure(let error):
@@ -97,7 +96,7 @@ final class TaskListViewController: UITableViewController {
         alert.addAction(cancelAction)
         alert.addTextField { textField in
             if nameTask == "" {
-                textField.placeholder = "nameTask"
+                textField.placeholder = "Name task"
             } else {
                 textField.text = nameTask
             }

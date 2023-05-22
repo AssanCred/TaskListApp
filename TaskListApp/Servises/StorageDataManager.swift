@@ -51,8 +51,7 @@ final class StorageDataManager {
     }
     
     func save(_ taskName: String, completion: @escaping (Task) -> Void) {
-        guard let entityDescription = NSEntityDescription.entity(forEntityName: "Task", in: viewContext) else { return }
-        guard let task = NSManagedObject(entity: entityDescription, insertInto: viewContext) as? Task else { return }
+        let task = Task(context: viewContext)
         task.title = taskName
         completion(task)
         saveContext()
